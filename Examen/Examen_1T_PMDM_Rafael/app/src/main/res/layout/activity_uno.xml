@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityUno">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="50px"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="38dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:fontFamily="serif"
+            android:text="Vota por tu país"
+            android:textAlignment="center"
+            android:textSize="34sp" />
+
+        <RadioGroup
+            android:id="@+id/grupoRb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="30px">
+
+            <RadioButton
+                android:id="@+id/ru"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reino Unido" />
+
+            <RadioButton
+                android:id="@+id/es"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="España" />
+
+            <RadioButton
+                android:id="@+id/is"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Islandia" />
+
+            <RadioButton
+                android:id="@+id/di"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dinamarca" />
+
+            <RadioButton
+                android:id="@+id/lu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Luxemburgo" />
+
+            <Button
+                android:id="@+id/votarBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:layout_marginBottom="30px"
+                android:text="Votar" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30px"
+                android:fontFamily="serif"
+                android:text="Recuento de votos :"
+                android:textAlignment="textStart"
+                android:textSize="20sp" />
+
+            <ListView
+                android:id="@+id/lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RadioGroup>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
